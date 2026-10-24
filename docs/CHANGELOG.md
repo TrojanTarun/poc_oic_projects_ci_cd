@@ -32,7 +32,8 @@ Author, reviewer, commit, dates and deployment runs already live in the PR and F
 | Integration | Version | Trigger / endpoint | Connections | Lookups / libraries |
 |---|---|---|---|---|
 | | | | | |
-
+TEN POS-26B Receive Tasks Scheduler | 1.0.0 | Scheduled  |||
+TEN POS-26B Process | 1.1.1 | App Driven | TEN POS-30 SMat DB<br>TEN POS-26B PeopleConnect REPORT<br>TEN POS-26B OIC REST Trigger | TEN_POS26B_Mapping_Lookup<br>TEN_Common_Email_Lookups|
 Notes: names only, never secrets. Anything that differs per environment (host, user name): list the names here.
 
 ## 3. Release Log (newest first)
@@ -41,7 +42,7 @@ Copy this block to the top for each change:
 
 ```markdown
 ### <project>-vX.Y.Z : YYYY-MM-DD : <short title>
-- Tracker / PR: DEF-0000 / #00
+- Tracker / PR: DEF0000 / #00
 - Changed: <INTEGRATION> (01.00.000A -> 01.00.000B), <element>: was <before>, now <after>
 - Why: <reason>
 - Tested: Dev, Test (evidence in PR)
@@ -53,17 +54,17 @@ Add one `Changed:` line per integration or artifact touched. Add `Breaking for c
 
 Be specific about the element (mapper field, switch condition, lookup row, schedule, connection setting). "Updated mapping" is not acceptable.
 
-### Example (delete when you start)
+### Example 
 
-### invoicesync-v1.0.2 : 2026-10-20 : Default currency when missing
-- Tracker / PR: DEF-1001 / #58
-- Changed: INV_SYNC_01 (01.00.0001 -> 01.00.0002), mapper `currency`: was source value only, now defaults to USD when empty
-- Why: target API returned 400 on null
+### TEN_OIC_POS_PRJ_v1.0.1 : 2026-10-20 : new changes
+- Tracker / PR: DEF0000 / 
+- Changed: TEN_OIC_POS_PRJ (01.00.0001 -> 01.00.0002),  `what changes has been made`
+- Why: `Failure reason`
 - Tested: Dev, Test (evidence in PR)
-- Rollback to: invoicesync-v1.0.1
-- Manual action after deploy: none
+- Rollback to: `previous version`
+- Manual action after deploy: `action`
 
-### invoicesync-v0.1.0 : YYYY-MM-DD : Baseline
+### TEN_OIC_POS_PRJ_v1.0.0 : YYYY-MM-DD : Baseline
 - Initial Git import. Contents: see section 2.
 
 ## 4. History Before Git (optional, limit to about 1 to 2 hours)
