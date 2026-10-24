@@ -15,7 +15,7 @@ docs/
 
 | Project | Domain | Technical owner | Wave | History |
 |---|---|---|---|---|
-| InvoiceSync | Finance | @invoice-lead | 0 | [CHANGELOG] |
+| TEN_OIC_POS_PRJ | DirectProcurement | @lead | 0 | [CHANGELOG] |
 | | | | | |
 
 ## Standalone integrations not yet in a Project
